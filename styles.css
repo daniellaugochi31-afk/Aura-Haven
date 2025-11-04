@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-image: url("imgs/IMG_20251103_201653.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+
+h2{
+  color: #000000;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color:  rgba(201, 10, 153, 0.8);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Packages */
+.packages {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.package-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.package {
+  background-color: rgba(231, 22, 179, 0.644);
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.package img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+  background-color: rgba(255, 255, 255, 0.466);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #b60c8b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  margin: 0 10px;
+  color: #ff00ff;
+  text-decoration: none;
+  
+}
+
+/* Footer */
+footer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  text-align: center;
+  text-size-adjust: inherit;
+  padding: 15px;
+  background-color: rgba(202, 54, 145, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .package-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+}
